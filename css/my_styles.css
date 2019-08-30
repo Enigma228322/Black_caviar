@@ -3,8 +3,15 @@
 .top-img{
     width: 100px;
     height: 100px;
+    margin-left: 20px;
+}
+
+.active-menu{
+    width: 100px;
+    height: 100px;
     margin-left: 100px;
 }
+
 .selector-for-some-widget {
   box-sizing: content-box;
 }
@@ -17,4 +24,8 @@
 .row .col{
     font-family: 'Abril Fatface', cursive;
     font-size: 2em;
+}
+
+body{
+    background-image: url(source/img/black_caviar.jpg)
 }
