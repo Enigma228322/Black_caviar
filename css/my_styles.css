@@ -1,5 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+
 .top-img{
     width: 100px;
     height: 100px;
     margin-left: 100px;
+}
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+.row{
+    margin-top: 2%;
+    box-sizing: border-box;
+}
+
+.row .col{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2em;
 }
