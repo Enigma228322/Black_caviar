@@ -13,20 +13,22 @@
      <link href="../source/img/logo.ico" rel="shortcut icon" type="image/x-icon">
  </head>
   <body style="background-image: url(../source/img/black_caviar.jpg)">
-  <div class="back"></div>
-        <header id="header" class="row">
-            <div >
-                <div >
-                    <a href="https://BlackCaviar.com/" title="На главную">
-                        <img src="../source/img/menu.png" class="active-menu" title="Меню"
-                        alt="BlackCaviar.com" >
-                        <img src="../source/img/logo.png" class="top-img" title="На главную"
-                        alt="BlackCaviar.com" >
-                    </a>
-                </div>
-            </div>
-        </header>
-        <section></section>
+    <header id="header" class="row">
+        <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="../source/img/menu.png" class="active-menu" title="Меню"
+            alt="BlackCaviar.com" >
+            <a href="https://BlackCaviar.com/" title="На главную">
+                <img src="../source/img/logo.png" class="top-img" title="На главную"
+                alt="BlackCaviar.com" >
+            </a>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Магазин</a></li>
+            <li><a class="dropdown-item" href="#">Контакты</a></li>
+            <li><a class="dropdown-item" href="#">О нас</a></li>
+        </ul>
+    </header>
+    <section></section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
