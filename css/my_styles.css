@@ -128,6 +128,10 @@ logo{
     color: #FFFFFF;
 }
 
+.second-block{
+    position: relative;
+}
+
 .sub-main-text{
     position: absolute;
     width: 603px;
