@@ -1,18 +1,10 @@
 
 @media(min-width: 949px){
 
-
 header{
     opacity: 0.4;
     background-color: white;
-    width: 270px;
-    top:0px;
-    margin-top: 0px;
-    max-height: 100px;
-    overflow:hidden;
-    -webkit-transition:max-height 0.2s ease-in;
-    -moz-transition:max-height 0.2s ease-in;
-    transition:max-height 0.2s ease-in;
+    width: 330px;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -27,7 +19,8 @@ header{
     position: absolute;
     font-family: 'Oswald', sans-serif;
     color: white;
-    left:
+    top: 40%;
+    left: 17%;
 }
 
 .icon{
@@ -40,26 +33,24 @@ header{
     padding: 10px;
 }
 
-nav{
-    background-color: white;
-    width: auto;
-    height: auto;
-}
-
-a.dropdown-item{
-    width: 300px;
-    height: 30px;
-}
-
-a.dropdown-item:active{
-    background-color: silver;
-    transition-duration: 0.5s;
-}
-
 header:hover{
     opacity: 1;
-    transition: all 0.5s ease-in;
-    max-height: 300px;
+    transition: width 0.2s ease-in;
+    width: 70%;
+}
+
+.active-menu{
+    position: relative;
+    margin-left: 50px;
+}
+
+@keyframes animX {
+   from {
+      left: 0px;
+   }
+   to {
+      left: var(--pos-X);
+   }
 }
 
 .top-img{
@@ -68,27 +59,52 @@ header:hover{
     margin-left: 20px;
 }
 
-.active-menu{
-    position: relative;
-    margin-left: 50px;
-}
-
-.selector-for-some-widget {
-  box-sizing: content-box;
-}
-
-.row{
-    margin-top: 2%;
-    box-sizing: border-box;
-}
-
-.row .col{
-    font-family: 'Abril Fatface', cursive;
-    font-size: 2em;
-}
-
 body{
     background-image: url(source/img/black_caviar.jpg)
+}
+
+}
+
+@media(max-width: 949px){
+
+.right-text{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    opacity: 0;
+}
+
+header{
+    opacity: 0.4;
+    background-color: white;
+    top:0px;
+    margin-top: 0px;
+    width: 225px;
+    height: 100px;
+    font-family: 'Oswald', sans-serif;
+}
+
+header:hover{
+    opacity: 1;
+    transition: all 0.2s ease-in;
+    height: 500px;
+}
+
+.top-img{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.main-text{
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    color: silver;
+}
+
+.small-text{
+    opacity: 0;
 }
 
 }
