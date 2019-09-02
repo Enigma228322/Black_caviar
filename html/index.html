@@ -3,73 +3,97 @@
    <head>
      <meta charset="utf-8">
      <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
+     <!-- styles -->
      <link href="../css/my_styles.css" rel="stylesheet">
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+     <!-- background style -->
+     <link rel="stylesheet" type="text/css" href="../css/background/default.css" />
+     <link rel="stylesheet" type="text/css" href="../css/background/component.css" />
+     <script src="../js/background/modernizr.custom.js"></script>
+
      <meta name="description" content="Икра из Астрахани">
      <meta name="keywords" content="Икра, Чёрная, Астрахань">
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-     <script src="../js/script.js"></script>
+
      <title>Икра</title>
 <!--     Here should be logo-->
      <link href="../source/img/logo.ico" rel="shortcut icon" type="image/x-icon">
  </head>
-  <body style="background-image: url(../source/img/black_caviar.jpg)" >
+
+<!--     background         -->
+    <div class="background">
+     <ul id="cbp-bislideshow" class="cbp-bislideshow">
+      <li>
+        <img src="../source/img/black_caviar.jpg" alt="background_1"/>
+      </li>
+      <li>
+        <img src="../source/img/1.jpg" alt="background_2"/>
+      </li>
+      <li>
+        <img src="../source/img/2.jpg" alt="background_3"/>
+      </li>
+     </ul>
+    </div>
+
+<!--     header         -->
     <header id="header" class="row" id="hat">
-        <rectangle>
-            <subrect1 type="button" id="menu-icon" onclick="swipeMenu()">
-                <line1></line1>
-                <line2></line2>
-                <line3></line3>
-            </subrect1>
-            <subrect2 id="logo-img">
-                <logo>Logo</logo>
-            </subrect2>
-        </rectangle>
-        <div class="right-text">
-            <h6 class="hat-call">+7 383 2 170 800</h6>
-            <h7 class="sub-hat-call">Заказать звонок</h7>
-        </div>
+      <rectangle>
+        <subrect1 type="button" id="menu-icon" onclick="swipeMenu()">
+          <line1></line1>
+          <line2></line2>
+          <line3></line3>
+        </subrect1>
+        <subrect2 id="logo-img">
+          <logo>Logo</logo>
+        </subrect2>
+      </rectangle>
+      <div class="right-text">
+        <h6 class="hat-call">+7 383 2 170 800</h6>
+        <h7 class="sub-hat-call">Заказать звонок</h7>
+      </div>
     </header>
     <div class="main-menu" id="main-menu-1">
-       <a class="dropdown-item" id="menu-item-1" href="#">Магазин</a>
-       <a class="dropdown-item" id="menu-item-2" href="#">Контакты</a>
-       <a class="dropdown-item" id="menu-item-3" href="#">О нас</a>
+     <a class="dropdown-item" id="menu-item-1" href="#">Магазин</a>
+     <a class="dropdown-item" id="menu-item-2" href="#">Контакты</a>
+     <a class="dropdown-item" id="menu-item-3" href="#">О нас</a>
     </div>
     <section>
-        <div>
-            <h1 class="main-text" id="main-center-text">
-                ЧЁРНАЯ ИКРА
-                ПРЕМИУМ КЛАССА
-            </h1>
-            <h6 class="sub-main-text" id="sub-main-center-text">
-                Осетровая икра прямиком из Астрахани,
-                вкусноя свежоя как крым в России
-            </h6>
-        </div>
-<!--        <div class="rect">-->
-<!--            <arrowL></arrowL>-->
-<!--            <arrowR></arrowR>-->
-<!--        </div>-->
+      <div>
+        <h1 class="main-text" id="main-center-text">
+            ЧЁРНАЯ ИКРА
+            ПРЕМИУМ КЛАССА
+        </h1>
+        <h6 class="sub-main-text" id="sub-main-center-text">
+            Осетровая икра прямиком из Астрахани,
+            вкусноя свежоя как крым в России
+        </h6>
+      </div>
+    <!-- background navigation -->
+      <div id="cbp-bicontrols" class="cbp-bicontrols">
+        <span class="cbp-biprev"></span>
+        <span class="cbp-binext"></span>
+      </div>
     </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- background script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../js/background/jquery.imagesloaded.min.js"></script>
+    <script src="../js/background/cbpBGSlideshow.min.js"></script>
+    <script>
+      $(function() {
+        cbpBGSlideshow.init();
+      });
+    </script>
+
+    <!-- menu script -->
+    <script src="../js/menu/menu.js"></script>
+
   </body>
 </html>
-
-<!--<button class="btn btn-secondary btn-lg navbar-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-<!--            <img src="../source/img/menu.png" class="active-menu" title="Меню"-->
-<!--            alt="BlackCaviar.com" >-->
-<!--            <a href="https://BlackCaviar.com/" title="На главную">-->
-<!--                <img src="../source/img/logo.png" class="top-img" title="На главную"-->
-<!--                alt="BlackCaviar.com" >-->
-<!--            </a>-->
-<!--        </button>-->
-<!--        <ul class="dropdown-menu">-->
-<!--            <li><a class="dropdown-item" href="#">Магазин</a>-->
-<!--            </li>-->
-<!--            <li><a class="dropdown-item" href="#">Контакты</a></li>-->
-<!--            <li><a class="dropdown-item" href="#">О нас</a></li>-->
-<!--        </ul>-->
